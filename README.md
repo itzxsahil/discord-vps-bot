@@ -1,28 +1,52 @@
-# VPS Discord Bot — Railway Ready
+<h1 align="center">🤖 Discord VPS Bot (Railway Ready)</h1>
 
-Railway automatically installs Python dependencies from `requirements.txt` and starts `bot.py` using `railway.json`. No terminal/command setup is needed after importing the project.
+<p align="center">
+  <a href="https://github.com/itz-spidy">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=5865F2&center=true&vCenter=true&width=900&lines=Railway-Ready+Discord+Bot+for+VPS+Management;Slash+Commands+%7C+Role-Based+Access+Control;Automated+Deployment+via+railway.json;Zero+Config+Needed+After+Import" alt="Typing SVG" />
+  </a>
+</p>
 
-## Deploy
+<p align="center">
+  <img src="https://img.shields.io/badge/Discord-py%20v2.0-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+  <img src="https://img.shields.io/badge/Railway-Production%20Ready-0B0D0E?style=for-the-badge&logo=railway&logoColor=white">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white">
+</p>
 
-1. Upload these files to a GitHub repository (keep `bot.py`, `requirements.txt`, and `railway.json` in the repository root).
-2. In Railway, create a project and deploy the GitHub repository.
-3. Open the Railway service's **Variables** and add:
-   - `DISCORD_BOT_TOKEN` = your Discord bot token
-4. In the Discord Developer Portal, enable the **Server Members Intent** and **Message Content Intent** if the bot's features use them.
-5. Add your server access links, one per line, to `server.txt` in the persistent volume. If no file exists, the bot creates an empty one; it cannot issue VPS links until you add links.
+---
 
-## Set the bot token locally
+## 🎬 Video Tutorial & Slash Commands Demo
 
-When you run `python bot.py` in a terminal without `DISCORD_BOT_TOKEN` set, the bot securely prompts for the token and saves it in `.env`. The token is not displayed while typing, and `.env` is excluded from Git. You can also set `DISCORD_BOT_TOKEN` directly in your operating system environment.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
+  <br><br>
+  <img src="https://media.giphy.com/media/7ZTWb4gY0w3rO/giphy.gif" width="700" alt="Slash Command Walkthrough" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+  <br><br>
+  <img src="https://img.shields.io/badge/%E2%96%B6%EF%B8%8F%20WATCH%20TUTORIAL-HOW%20TO%20DEPLOY%20ON%20RAILWAY-5865F2?style=for-the-badge&logo=youtube&logoColor=white" />
+</div>
 
-Railway runs the bot without an interactive terminal, so enter the token in the service's **Variables** page instead; the bot prints this instruction and exits cleanly if the variable is missing.
+---
 
-## Keep data across redeploys
+# 🚀 Overview
 
-Add a Railway Volume to the service and mount it at `/data`. Set the variable `RAILWAY_VOLUME_MOUNT_PATH=/data`. The bot stores `server.txt` and `bot_data.json` there so link inventory and claim data survive restarts/redeploys.
+A Discord bot pre-configured for instant **Railway** hosting to administer and manage VPS services with role-gated slash commands.
 
-## Notes
+### 🌟 Features
+- ⚡ **Auto-Deploy on Railway**: Includes `railway.json` and `Procfile` for instant zero-config deployments.
+- 🛡️ **Role & Channel Security**: Strict channel (`ALLOWED_CHANNEL_ID`) and admin role (`ADMIN_ROLE_ID`) protections.
+- ⚡ **Slash Command Suite**: Fast native Discord interactions.
 
-- Never put your bot token in `bot.py` or commit it to GitHub. A token was previously present in the source code; reset it immediately in the Discord Developer Portal, then use the new token as `DISCORD_BOT_TOKEN` or enter it into the local `.env` prompt.
-- Railway cannot know your VPS access links; add them to `server.txt` on the mounted volume.
-- The bot's configured Discord channel/role/user IDs remain in `bot.py`; update them if they differ in your server.
+---
+
+# 📦 Deploy on Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)
+
+1. Import this repository into Railway.
+2. Set your environment variables in Railway's Variables tab:
+   - `DISCORD_TOKEN`: Your Discord bot token.
+3. Railway automatically starts `bot.py`!
+
+---
+
+# 👤 Author
+Crafted with ❤️ by [@itz-spidy](https://github.com/itz-spidy).
