@@ -1,55 +1,52 @@
-<h1 align="center">🤖 Discord VPS Bot (Railway Ready)</h1>
+<h1 align="center">🤖 Discord VPS Admin Bot</h1>
 
 <p align="center">
   <a href="https://github.com/itzxsahil">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=5865F2&center=true&vCenter=true&width=900&lines=Railway-Ready+Discord+Bot+for+VPS+Management;Slash+Commands+%7C+Role-Based+Access+Control;Automated+Deployment+via+railway.json;Made+with+❤️+by+itzxsahil" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=5865F2&center=true&vCenter=true&width=900&lines=Railway-Ready+Discord+Bot+for+VPS+Management;Slash+Commands+%7C+Role-Based+Access+Control;Automated+Deployment+via+railway.json;Engineered+by+itzxsahil" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Discord-py%20v2.0-5865F2?style=for-the-badge&logo=discord&logoColor=white"> <img src="https://img.shields.io/badge/Railway-Production%20Ready-0B0D0E?style=for-the-badge&logo=railway&logoColor=white">
+  <img src="https://img.shields.io/badge/Discord-py%20v2.0-5865F2?style=for-the-badge&logo=discord&logoColor=white"> <img src="https://img.shields.io/badge/Railway-Production%20Ready-0B0D0E?style=for-the-badge&logo=railway&logoColor=white"> <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white">
 </p>
 
 ---
 
-## 🎬 Video Tutorial & Interactive Walkthrough
+## 📸 Project Preview
 
-<div align="center">
-  <a href="https://www.youtube.com/results?search_query=itzxsahil+discord+vps+bot">
-    <img src="assets/tutorial-showcase.svg" width="100%" alt="Video Tutorial Showcase" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
-  </a>
-  <p><em>▶️ <strong>Interactive Project Tutorial</strong> — Click the player above to watch full setup guide &amp; demonstration!</em></p>
-</div>
+<p align="center">
+  <img src="assets/project-banner.svg" width="100%" alt="Project Preview" />
+</p>
 
 ---
 
 # 🚀 Overview
 
-A Discord bot configured for instant deployment on **Railway** to oversee and operate VPS services using role-gated slash commands.
+A production-ready Discord bot engineered for instant **Railway** hosting to supervise, administer, and manage cloud VPS instances through role-gated slash commands.
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+# 🏗️ System Architecture & Data Flow
 
-<div align="center">
-  <img src="assets/architecture.svg" width="100%" alt="Architecture Diagram" style="border-radius: 12px;" />
-</div>
+<p align="center">
+  <img src="assets/architecture.svg" width="100%" alt="System Architecture &amp; Data Flow" />
+</p>
 
 <br>
 
-Discord.py bot process connects to the Discord gateway, evaluating authorization before dispatching server operations and returning interactive embed messages.
+Discord application commands are intercepted by the bot gateway, authenticated through role and channel permissions, and executed against server management endpoints.
 
 ---
 
 # ✨ Features
 
-✅ **Railway Native**: Includes `railway.json` and `Procfile` for zero-configuration deployments.\n✅ **Role & Channel Security**: Commands are strictly restricted by channel and role IDs.\n✅ **Slash Commands**: Modern Discord UI interactions.
+✅ **Railway Native**: Includes `railway.json` and `Procfile` for one-click deployment.\n✅ **Role Security**: Strict admin role (`ADMIN_ROLE_ID`) and channel (`ALLOWED_CHANNEL_ID`) gating.\n✅ **Slash Commands**: Fast, modern Discord UI interaction.
 
 ---
 
 # 📦 Installation & Quickstart
 
-### Railway Deployment\n[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)\n\nImport repository, supply `DISCORD_TOKEN` in the Variables tab, and deploy!
+### Deploy to Railway\n[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app)\n\n1. Import into Railway.\n2. Set `DISCORD_TOKEN` in the Variables tab.\n3. Railway automatically starts `bot.py`.
 
 ---
 
